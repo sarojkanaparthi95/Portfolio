@@ -5,7 +5,7 @@ body {
     padding: 0;
     background-image: url('work-stations-plus-espresso');
     background-size: cover;
-    background-position: center;
+    background-position: center/cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: #333;
