@@ -5,7 +5,7 @@ body {
     padding: 0;
     background-image: url('work-stations-plus-espresso');
     background-size: cover;
-    background-position: center/cover;
+    background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: #333;
@@ -13,7 +13,7 @@ body {
 }
 
 header {
-    background-color: rgba(0, 0, 0, 50%); /* Slightly transparent white background */
+    background-color: rgba(0, 0, 0, 50%);
     color: white;
     padding: 15px 0;
     text-align: center;
@@ -31,11 +31,11 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: center;
-    background-color: rgba(51, 51, 51, 0.8); /* Adding slight transparency */
+    background-color: rgba(51, 51, 51, 0.8);
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 10px;
 }
 
 nav ul li a {
@@ -48,13 +48,13 @@ nav ul li a {
 }
 
 nav ul li a:hover {
- background-color: rgba(30, 144, 255, 90%); /* Slightly transparent white background */
+    background-color: rgba(30, 144, 255, 90%);
 }
 
 main {
     padding: 20px;
     text-align: center;
-    background-color: rgba(0, 0, 0, 50%); /* Slightly transparent white background */
+    background-color: rgba(0, 0, 0, 50%);
     margin: 20px auto;
     max-width: 1000px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -65,89 +65,66 @@ h {
     color: white;
     font-size: 1.8em;
     margin-bottom: 20px;
-text-shadow: 
-        2px 0px 0px rgba(0, 0, 0, 0.8)
+    text-shadow: 2px 0px 0px rgba(0, 0, 0, 0.8);
 }
+
 h4 {
     color: white;
     font-size: 1em;
     margin-bottom: 20px;
-text-shadow: 
-        2px 0px 0px rgba(0, 0, 0, 0.8)
+    text-shadow: 2px 0px 0px rgba(0, 0, 0, 0.8);
 }
 
 h2 {
     color: white;
     font-size: 2.5em;
     margin-bottom: 20px;
-text-shadow: 
-        2px 0px 0px rgba(0, 0, 0, 0.8) /* First shadow */
-        
+    text-shadow: 2px 0px 0px rgba(0, 0, 0, 0.8);
 }
 
 p {
     font-size: 1.1em;
-color: white;
+    color: white;
     margin-bottom: 20px;
 }
 
 .experience-grid {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
-margin-left: 50px;
-margin-right: 50px;
-
-gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-left: 50px;
+    margin-right: 50px;
+    gap: 20px;
 }
 
-
 footer {
-    background-color: rgba(51, 51, 51, 0.8); /* Adding slight transparency */
+    background-color: rgba(51, 51, 51, 0.8);
     color: white;
     text-align: center;
     padding: 5px 0;
     position: relative;
-top: 100px;
+    top: 100px;
     bottom: 0;
     width: 100%;
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Link Styles */
-a {
-    color: #4CAF50;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-a:hover {
-    color: #333;
-}
-
 /* Responsive Design */
-
-/* For laptop screens */
-@media (min-width: 1024px) {
-    body {
-        background-size: 100% auto; /* Full width, auto height */
-    }
-}
 
 /* For smaller laptop screens or large tablets */
 @media (min-width: 768px) and (max-width: 1023px) {
     body {
-        background-size: cover; /* Cover the entire background */
+        background-size: cover;
     }
 }
 
 /* For tablets and mobile devices */
 @media (max-width: 767px) {
     body {
-        background-size: contain; /* Scale to fit within the viewport */
+        background-size: contain;
     }
 
     header h1 {
-        font-size: 2em;
+        font-size: 1.8em;
     }
 
     nav ul {
@@ -155,7 +132,7 @@ a:hover {
     }
 
     nav ul li {
-        margin: 10px 0;
+        margin: 5px 0;
     }
 
     main {
@@ -164,10 +141,15 @@ a:hover {
     }
 
     h2 {
-        font-size: 1.8em;
+        font-size: 1.5em;
     }
 
     p {
         font-size: 1em;
+    }
+
+    .experience-grid {
+        grid-template-columns: 1fr;
+        margin: 0;
     }
 }
